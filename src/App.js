@@ -22,7 +22,7 @@ function App() {
       }
 
       setError("");
-      const result = await axios.post("http://localhost:3001/bfhl", parsedInput); // Backend URL
+      const result = await axios.post("https://bajaj-backend-one-green.vercel.app/bfhl", parsedInput); // Backend URL
       setResponse(result.data);
     } catch (err) {
       setError("Invalid JSON input.");
